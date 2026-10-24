@@ -1,0 +1,57 @@
+================================================================================
+Al-Meeqat (المیقات) - Google Play Store Official Listing (English)
+================================================================================
+
+App Title (Max 30 chars):
+Al-Meeqat: Prayer Times & Qibla
+
+Short Description (Max 80 chars):
+100% accurate astronomical prayer times, live Qibla compass & dynamic schedules.
+
+Full Description (Max 4000 chars):
+Al-Meeqat (المیقات) is a next-generation, high-precision Islamic astronomical suite meticulously developed according to the authentic spherical trigonometry algorithms of Dr. S. Kamal Abdali and eminent astronomical scholars.
+
+Unlike conventional prayer apps that rely on rough approximations, Al-Meeqat calculates exact solar horizons, atmospheric refraction, elevation, and zenith angles to deliver sub-second accuracy for every prayer time worldwide.
+
+--------------------------------------------------------------------------------
+🌟 Key Features of Meeqat:
+--------------------------------------------------------------------------------
+
+1. Comprehensive Daily Prayer Milestones (12h & 24h Formats):
+- End of Sehar, Fajr beginning, and Fajr Adhan with precision countdown.
+- Sunrise and Ishraq start time (exactly 12 minutes post-sunrise).
+- Separate astronomical computation of Nisf-un-Nahar (Shar'i Midday) and Zawal/Istiwa with a dedicated 10-minute precautionary window preceding Dhuhr.
+- Dhuhr start, Adhan, and Shafi'i / Hanafi end times.
+- Asr Shafi'i, Asr Hanafi, and Makrooh Asr time (15 minutes prior to sunset).
+- Sunset, Iftar time, Maghrib Adhan, and Maghrib end time.
+- Isha start, Isha Adhan, Nisf-ul-Layl (Midnight Makrooh time), and Isha end time.
+- Tahajjud timings marking the start of the Last Third and Last Sixth of the night.
+
+2. Zero-Config Global Search & Real Device GPS Auto-Detect:
+- Search any village, neighborhood, town, or city worldwide just like Google Maps, without requiring any API keys or configuration on the front end.
+- 1-tap real hardware GPS locator with smart network IP fallback, automatically detecting your physical location and computing hyper-local prayer schedules.
+
+3. Mosque Digital TV Display & Dynamic Jama'at Management:
+- Dedicated landscape TV mode designed for Masjid Android TVs and LED screens.
+- Dual display modes: Beginning astronomical times or five daily prayer Jama'at times (including Friday Jumu'ah).
+- Multi-mosque management with dynamic seasonal Jama'at timetable calculation.
+
+4. Ultra-Sensitive 360° Qibla Compass & Solar Qibla:
+- Real-time magnetic declination compensation pointing accurately towards the Holy Kaaba in Makkah.
+- Complete Solar Qibla chart showing shadow alignment times when the sun or its shadow points directly towards the Qibla (at 0°, 90°, 135°, and 180°).
+
+5. Hijri Calendar & Moon Sighting Astronomical Data:
+- Bilingual Hijri calendar with +/- 2 days manual sighting adjustment.
+- Detailed astronomical Moon Sighting data, conjunction birth time, and moon visibility predictions.
+
+6. Monthly Timetable Document Export (PDF, CSV & HTML):
+- Export, print, or share high-resolution PDF prayer calendars, CSV spreadsheets, and clean HTML documents for any city and month.
+
+7. Authentic Juristic Customization:
+- Asr Juristic Method: Hanafi (double shadow) or Shafi'i/Hanbali/Maliki (single shadow).
+- Fajr & Isha Determination: 18° Jamhoor Consensus vs 15° (Mufti Rasheed Ahmed Ludhianvi & Mufti Muhammad Tayyab Saleem Sargodha), accompanied by an insightful scholarly guidance dialog explaining precautionary practices.
+
+8. 100% Ad-Free, Private & Offline:
+- Zero commercial advertisements, zero analytics tracking, and zero data collection. All calculations run natively and locally on your device.
+
+Download Al-Meeqat today to observe your prayers and fasting with complete scientific and religious peace of mind.

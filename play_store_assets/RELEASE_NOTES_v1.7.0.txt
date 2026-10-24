@@ -1,0 +1,21 @@
+<en-US>
+What's new in Meeqat (المیقات) v1.7.0:
+- 📅 Custom Date-to-Date Timetable: Generate prayer timetables for any custom date range (e.g. 15 days, 40 days, multi-month) alongside the regular monthly schedule.
+- 📄 Enhanced Multi-Format Exports: Export custom and monthly timetables directly to printable PDF, Word (.doc), Excel CSV, Monospace Text, and WhatsApp share.
+- ⏰ Smart Prayer & Jamaat Alarms: Choose to trigger alarms at exact prayer start times or set custom reminder minutes before Jama'at.
+- 🕌 Pure 18° Astronomical Standard: Standardized prayer calculations to the authentic 18° solar depression angle in full accordance with mainstream Pakistani and Hanafi jurisprudence.
+- 🎨 Complete Light & Dark Mode: Full visual parity across Mosque Display, Settings, FAQs, and Saved Mosques with high-contrast typography.
+- 📱 Responsive Display Screen: Fixed digital clock seconds and month switcher layout across all screen sizes and TV displays.
+- ℹ️ Official Attribution & Contact: Added Founder & Director attribution (Molana Tanzil-ur-Rehman) with instant one-tap WhatsApp support.
+</en-US>
+
+<ur-PK>
+المیقات (Meeqat) نسخہ 1.7.0 میں نئی خصوصیات و ترامیم:
+- 📅 تاریخ تا تاریخ جدول (Custom Date Range): اب عام ماہانہ جدول کے ساتھ ساتھ اپنی پسند کی کسی بھی تاریخ سے دوسری تاریخ تک (مثلاً 10 دن، 40 دن یا دو ماہ) کا جدولِ صلوٰۃ حاصل کریں۔
+- 📄 کسٹم ایکسپورٹ کی سہولت: تاریخ تا تاریخ جدول کو موبائل پر ہی پی ڈی ایف (PDF)، ورڈ فائل (.doc)، ایکسل شیٹ (.csv)، سادہ ٹیکسٹ، اور واٹس ایپ شیئر میں تبدیل اور محفوظ کریں۔
+- ⏰ نماز اور جماعت کے قبل از وقت الارم: نماز کا وقت شروع ہونے پر یا جماعت سے حسبِ ضرورت 10، 15 یا جتنا منٹ چاہیں پہلے الارم لگانے کی مکمل آزادی۔
+- 🕌 معتمد و محتاط 18 ڈگری فلکیاتی معیار: جمہور اہل فتویٰ اور پاکستانی فتاویٰ کے مطابق 18 ڈگری فلکیاتی زاویے پر مکمل استناد۔
+- 🎨 مکمل لائٹ اور ڈارک موڈ: ڈسپلے سکرین، سیٹنگز، مساجد و جماعت، اور ایف اے کیو سکرین پر بہترین پڑھنے کا تجربہ۔
+- 📱 موبائل و ٹی وی لے آؤٹ کی درستگی: ڈسپلے اسکرین پر ڈیجیٹل کلاک اور جدول اسکرین پر مہینہ سوئچر کا کسی بھی اسکرین سائز پر بغیر کٹے خودکار ایڈجسٹ ہونا۔
+- ℹ️ بانی و سرپرستِ پروجیکٹ کا باضابطہ تعارف اور ون ٹیپ واٹس ایپ رابطہ۔
+</ur-PK>

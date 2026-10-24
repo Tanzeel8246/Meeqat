@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0F1D" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Luxury Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="35%" stop-color="#F59E0B" />
+      <stop offset="70%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+
+    <!-- Emerald Radiance Gradient -->
+    <linearGradient id="emeraldGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Radial Background Glow -->
+    <radialGradient id="ambientGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.18" />
+      <stop offset="50%" stop-color="#F59E0B" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0A0F1D" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- App Icon Squircle Canvas -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad)" stroke="#334155" stroke-width="2" />
+  
+  <!-- Ambient Center Glow -->
+  <circle cx="256" cy="256" r="220" fill="url(#ambientGlow)" />
+
+  <!-- Outer Celestial / Astrolabe Coordinate Ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-opacity="0.35" stroke-dasharray="4 8" />
+  <circle cx="256" cy="256" r="168" fill="none" stroke="url(#emeraldGrad)" stroke-width="1.5" stroke-opacity="0.25" />
+
+  <!-- 4 Celestial Cardinal Ticks (North/South/East/West) -->
+  <line x1="256" y1="58" x2="256" y2="72" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" />
+  <line x1="256" y1="440" x2="256" y2="454" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" />
+  <line x1="58" y1="256" x2="72" y2="256" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" />
+  <line x1="440" y1="256" x2="454" y2="256" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" />
+
+  <!-- The Geometric Crescent (Hilal of Astronomical Calculation) -->
+  <path d="M 286 120 
+           A 136 136 0 1 0 354 362 
+           A 152 152 0 1 1 286 120 Z" 
+        fill="url(#goldGrad)" 
+        filter="url(#softGlow)" />
+
+  <!-- The Modernist Minaret & Precision Qibla Spire (Pointing 360° True North/Makkah) -->
+  <!-- Left Spire Facet -->
+  <polygon points="256,92 232,328 256,312" fill="url(#emeraldGrad)" opacity="0.95" />
+  
+  <!-- Right Spire Facet (Chiseled 3D lighting) -->
+  <polygon points="256,92 256,312 280,328" fill="#34D399" opacity="0.85" />
+
+  <!-- North Qibla Arrowhead Tip Glow -->
+  <polygon points="256,80 268,115 256,108 244,115" fill="#FFFFFF" filter="url(#softGlow)" />
+
+  <!-- Dome / Mehrab Geometric Base Arch -->
+  <path d="M 214 360 
+           C 214 322, 298 322, 298 360 
+           L 316 404 
+           L 196 404 Z" 
+        fill="url(#goldGrad)" />
+
+  <!-- Inner Mehrab Arch Cutout -->
+  <path d="M 236 404 
+           L 236 376 
+           C 236 354, 276 354, 276 376 
+           L 276 404 Z" 
+        fill="#0A0F1D" />
+
+  <!-- Pulsing Celestial Star / Focal Beacon -->
+  <circle cx="256" cy="216" r="7" fill="#FFFFFF" filter="url(#softGlow)" />
+  <circle cx="256" cy="216" r="3" fill="#FDE68A" />
+
+  <!-- Delicate Horizon Radiance Line -->
+  <line x1="168" y1="416" x2="344" y2="416" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.8" />
+  <line x1="200" y1="426" x2="312" y2="426" stroke="url(#emeraldGrad)" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.6" />
+</svg>

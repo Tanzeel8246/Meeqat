@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">المیقات - Al-Meeqat</string>
+    <string name="widget_name">المیقات کلاک و بصری راستہ</string>
+    <string name="widget_description">دیدہ زیب گھڑی، اگلی نماز کا وقت اور کلک کرنے پر مکمل بصری شمسی راستہ</string>
+    <string name="next_prayer_hint">اگلی نماز: وقتِ ابتداء</string>
+</resources>

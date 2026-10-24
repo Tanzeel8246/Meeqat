@@ -1,0 +1,39 @@
+name: minaret_modern
+description: "Minaret Modern - Islamic Astronomical Prayer Times & Qibla Suite for Mobile, Windows, and Web"
+publish_to: 'none'
+version: 1.9.2+34
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.19.0
+  sensors_plus: ^6.1.1
+  audioplayers: ^6.1.0
+  url_launcher: ^6.3.0
+  path_provider: ^2.1.6
+  share_plus: ^13.3.1
+  pdf: ^3.13.1
+  geolocator: ^14.1.1
+  in_app_update: ^5.0.0
+  flutter_local_notifications: ^22.3.2
+  timezone: ^0.11.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/audio/
+    - assets/images/
+
+  fonts:
+    - family: Jameel Noori Nastaleeq
+      fonts:
+        - asset: assets/fonts/JameelNooriNastaleeq.ttf

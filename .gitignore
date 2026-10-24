@@ -1,0 +1,81 @@
+# ----------------------------------------------------
+# Sensitive Credentials & Signing Keys (NEVER COMMIT)
+# ----------------------------------------------------
+*keystore*
+*.jks
+*.jks*
+*.keystore
+*.p8
+*.p12
+key.properties
+KEYSTORE_DETAILS*
+*.env
+.env.*
+
+# ----------------------------------------------------
+# Release Packages & Large Archives (Use GitHub Releases)
+# ----------------------------------------------------
+*.apk
+*.aab
+*.zip
+*.tar.gz
+*.rar
+
+# ----------------------------------------------------
+# Flutter & Dart Build Artifacts
+# ----------------------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+**/build/
+.widget_preview/
+
+# Symbolication & Obfuscation
+app.*.symbols
+app.*.map.json
+
+# Android Studio / Gradle
+.gradle/
+**/android/.gradle/
+**/android/.kotlin/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/android/captures/
+local.properties
+**/android/local.properties
+
+# iOS / Xcode
+**/ios/.generated/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/AppFrameworkInfo.plist
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/flutter_assets/
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/profile
+**/ios/release
+**/ios/DerivedData/
+
+# ----------------------------------------------------
+# Editor & OS Files
+# ----------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*.class
+*.log
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws

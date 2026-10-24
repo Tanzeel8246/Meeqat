@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/widget_bg_transparent"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <!-- Top / Central Section: Left Wing (Isha/Maghrib) + Master Clock Capsule + Right Wing (Fajr/Sunrise) -->
+    <LinearLayout
+        android:id="@+id/widget_middle_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Left Wing (West/Night): Isha on Top, Maghrib on Bottom -->
+        <LinearLayout
+            android:id="@+id/widget_left_wing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- عشاء کیپسول [نام اوپر (نستعلیق)] [وقت نیچے (12 گھنٹے بغیر AM/PM)] -->
+            <LinearLayout
+                android:id="@+id/widget_box_isha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/widget_prayer_box"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="7dp"
+                android:paddingTop="2dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/widget_isha_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="عشاء" />
+
+                <ImageView
+                    android:id="@+id/widget_isha_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="عشاء ٹائم" />
+            </LinearLayout>
+
+            <!-- مغرب کیپسول [نام اوپر (نستعلیق)] [وقت نیچے (12 گھنٹے بغیر AM/PM)] -->
+            <LinearLayout
+                android:id="@+id/widget_box_maghrib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/widget_prayer_box"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="7dp"
+                android:paddingTop="2dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/widget_maghrib_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="مغرب" />
+
+                <ImageView
+                    android:id="@+id/widget_maghrib_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="مغرب ٹائم" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Center: Master Unified Frosted Glass Clock Capsule -->
+        <LinearLayout
+            android:id="@+id/widget_clock_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget_clock_capsule"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Clock Row: Hours/Minutes + Seconds & AM/PM Column -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Main Time (Hours:Minutes in 12-hour format) -->
+                <TextClock
+                    android:id="@+id/widget_text_clock_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:format12Hour="hh:mm"
+                    android:format24Hour="hh:mm"
+                    android:shadowColor="#E6000000"
+                    android:shadowDx="0"
+                    android:shadowDy="2"
+                    android:shadowRadius="6"
+                    android:textColor="#FFFFFF"
+                    android:textSize="58sp"
+                    android:textStyle="bold" />
+
+                <!-- Seconds & AM/PM Column -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!-- Seconds -->
+                    <TextClock
+                        android:id="@+id/widget_text_clock_sec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:format12Hour="ss"
+                        android:format24Hour="ss"
+                        android:shadowColor="#E6000000"
+                        android:shadowDx="0"
+                        android:shadowDy="1.5"
+                        android:shadowRadius="4"
+                        android:textColor="#FDE68A"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Main Clock AM / PM Indicator (Restored as per user request) -->
+                    <TextClock
+                        android:id="@+id/widget_text_clock_ampm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:format12Hour="a"
+                        android:format24Hour="a"
+                        android:shadowColor="#E6000000"
+                        android:shadowDx="0"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:textColor="#CBD5E1"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Subtitle: Next Prayer in Jameel Noori Nastaleeq Bitmap -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/widget_next_prayer_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="اگلی نماز" />
+
+                <TextView
+                    android:id="@+id/widget_toggle_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:shadowColor="#E6000000"
+                    android:shadowDx="0"
+                    android:shadowDy="1.5"
+                    android:shadowRadius="4"
+                    android:text="▾"
+                    android:textColor="#FDE68A"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Right Wing (East/Morning): Fajr on Top, Sunrise on Bottom -->
+        <LinearLayout
+            android:id="@+id/widget_right_wing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- فجر کیپسول [نام اوپر (نستعلیق)] [وقت نیچے (12 گھنٹے بغیر AM/PM)] -->
+            <LinearLayout
+                android:id="@+id/widget_box_fajr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/widget_prayer_box"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="7dp"
+                android:paddingTop="2dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/widget_fajr_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="فجر" />
+
+                <ImageView
+                    android:id="@+id/widget_fajr_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="فجر ٹائم" />
+            </LinearLayout>
+
+            <!-- طلوع کیپسول [نام اوپر (نستعلیق)] [وقت نیچے (12 گھنٹے بغیر AM/PM)] -->
+            <LinearLayout
+                android:id="@+id/widget_box_sunrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/widget_prayer_box"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="7dp"
+                android:paddingTop="2dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/widget_sunrise_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="طلوع" />
+
+                <ImageView
+                    android:id="@+id/widget_sunrise_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="طلوع ٹائم" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom Row: 3 Separate Compact Capsules in Strict RTL (عصر far left, ظہر center, نصف النہار far right) -->
+    <LinearLayout
+        android:id="@+id/widget_bottom_wing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <!-- عصر کیپسول -->
+        <LinearLayout
+            android:id="@+id/widget_box_asr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/widget_prayer_box"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:id="@+id/widget_asr_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="عصر ٹائم" />
+
+            <ImageView
+                android:id="@+id/widget_asr_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="عصر" />
+        </LinearLayout>
+
+        <!-- ظہر کیپسول -->
+        <LinearLayout
+            android:id="@+id/widget_box_dhuhr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/widget_prayer_box"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:id="@+id/widget_dhuhr_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="ظہر ٹائم" />
+
+            <ImageView
+                android:id="@+id/widget_dhuhr_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="ظہر" />
+        </LinearLayout>
+
+        <!-- نصف النہار شرعی کیپسول -->
+        <LinearLayout
+            android:id="@+id/widget_box_nisf_nahar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget_prayer_box"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:id="@+id/widget_nisf_nahar_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="نصف النہار ٹائم" />
+
+            <ImageView
+                android:id="@+id/widget_nisf_nahar_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="نصف النہار" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

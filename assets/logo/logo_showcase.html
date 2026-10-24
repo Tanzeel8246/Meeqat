@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minaret Modern - برانڈ نام اور مینیملسٹک لوگو شوکیس</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070B14;
+      --card: #0F172A;
+      --gold: #F59E0B;
+      --gold-light: #FDE68A;
+      --emerald: #10B981;
+      --text: #F8FAFC;
+      --muted: #94A3B8;
+      --border: rgba(255, 255, 255, 0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Amiri', 'Plus Jakarta Sans', system-ui, sans-serif;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--emerald);
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    h1 {
+      font-size: 38px;
+      color: var(--gold);
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 800px) {
+      .hero-grid { grid-template-columns: 1fr; }
+    }
+    .logo-card {
+      background: var(--card);
+      border-radius: 28px;
+      padding: 40px;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+    }
+    .logo-wrapper {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      margin-bottom: 25px;
+      filter: drop-shadow(0 20px 30px rgba(16, 185, 129, 0.2));
+      transition: transform 0.4s ease;
+    }
+    .logo-wrapper:hover {
+      transform: scale(1.05) rotate(1deg);
+    }
+    .logo-wrapper svg {
+      width: 100%;
+      height: 100%;
+    }
+    .scale-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+      padding: 15px 25px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+    .scale-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .names-section {
+      background: var(--card);
+      border-radius: 28px;
+      padding: 40px;
+      border: 1px solid var(--border);
+      margin-bottom: 50px;
+    }
+    .names-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+    .name-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .name-card:hover {
+      border-color: var(--gold);
+      background: rgba(245, 158, 11, 0.04);
+      transform: translateY(-3px);
+    }
+    .name-card.recommended {
+      border: 2px solid var(--gold);
+      background: linear-gradient(145deg, rgba(245, 158, 11, 0.08), rgba(16, 185, 129, 0.04));
+    }
+    .name-card.recommended::after {
+      content: "⭐ نمبر 1 تجویز (Top Pick)";
+      position: absolute;
+      top: -12px;
+      right: 20px;
+      background: var(--gold);
+      color: #000;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+    .name-title {
+      font-size: 26px;
+      font-weight: bold;
+      color: var(--gold-light);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    .name-en {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 16px;
+      color: var(--emerald);
+      font-weight: 600;
+    }
+    .name-desc {
+      color: #CBD5E1;
+      font-size: 14.5px;
+      margin-top: 8px;
+    }
+    .name-rationale {
+      margin-top: 10px;
+      font-size: 13px;
+      color: var(--muted);
+      border-right: 3px solid var(--emerald);
+      padding-right: 10px;
+    }
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 800px) {
+      .specs-grid { grid-template-columns: 1fr; }
+    }
+    .spec-box {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+    }
+    .spec-box h4 {
+      color: var(--emerald);
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+    .spec-box p {
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">BRANDING & VISUAL IDENTITY SUITE</div>
+      <h1>مینارِ جدید / نام کی تجاویز اور مینیملسٹک لوگو</h1>
+      <p class="subtitle">جدید فلکیاتی حساب و کتاب اور شرعی وقار کا شاہکار امتزاج</p>
+    </header>
+
+    <div class="hero-grid">
+      <!-- Logo Main Showcase -->
+      <div class="logo-card">
+        <div class="logo-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <defs>
+              <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0A0F1D" />
+                <stop offset="50%" stop-color="#0F172A" />
+                <stop offset="100%" stop-color="#050811" />
+              </linearGradient>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FDE68A" />
+                <stop offset="35%" stop-color="#F59E0B" />
+                <stop offset="70%" stop-color="#D97706" />
+                <stop offset="100%" stop-color="#92400E" />
+              </linearGradient>
+              <linearGradient id="emeraldGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#047857" />
+                <stop offset="50%" stop-color="#10B981" />
+                <stop offset="100%" stop-color="#34D399" />
+              </linearGradient>
+              <radialGradient id="ambientGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#10B981" stop-opacity="0.2" />
+                <stop offset="50%" stop-color="#F59E0B" stop-opacity="0.08" />
+                <stop offset="100%" stop-color="#0A0F1D" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad)" stroke="#334155" stroke-width="2" />
+            <circle cx="256" cy="256" r="220" fill="url(#ambientGlow)" />
+            <circle cx="256" cy="256" r="190" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-opacity="0.35" stroke-dasharray="4 8" />
+            <circle cx="256" cy="256" r="168" fill="none" stroke="url(#emeraldGrad)" stroke-width="1.5" stroke-opacity="0.25" />
+            <line x1="256" y1="58" x2="256" y2="72" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" />
+            <line x1="256" y1="440" x2="256" y2="454" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" />
+            <line x1="58" y1="256" x2="72" y2="256" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" />
+            <line x1="440" y1="256" x2="454" y2="256" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" />
+            <path d="M 286 120 A 136 136 0 1 0 354 362 A 152 152 0 1 1 286 120 Z" fill="url(#goldGrad)" />
+            <polygon points="256,92 232,328 256,312" fill="url(#emeraldGrad)" opacity="0.95" />
+            <polygon points="256,92 256,312 280,328" fill="#34D399" opacity="0.85" />
+            <polygon points="256,80 268,115 256,108 244,115" fill="#FFFFFF" />
+            <path d="M 214 360 C 214 322, 298 322, 298 360 L 316 404 L 196 404 Z" fill="url(#goldGrad)" />
+            <path d="M 236 404 L 236 376 C 236 354, 276 354, 276 376 L 276 404 Z" fill="#0A0F1D" />
+            <circle cx="256" cy="216" r="7" fill="#FFFFFF" />
+            <line x1="168" y1="416" x2="344" y2="416" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="200" y1="426" x2="312" y2="426" stroke="url(#emeraldGrad)" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </div>
+        <h3 style="color: var(--gold-light); margin-bottom: 5px;">مینیملسٹک وکٹر آئیکن (Master Vector)</h3>
+        <p style="color: var(--muted); font-size: 13px;">گولڈن ریشو، قبلہ کمپاس سوئی، روایتی محراب اور فلکیاتی ہلال کا اکائی ڈیزائن</p>
+
+        <!-- Scalability Preview -->
+        <div class="scale-row">
+          <div class="scale-item">
+            <div style="width: 64px; height: 64px;"><svg viewBox="0 0 512 512" style="width:100%;height:100%"><use href="#bgGrad"/></svg><img src="app_logo.svg" style="width:100%;height:100%"></div>
+            <span>64px (ایپ آئیکن)</span>
+          </div>
+          <div class="scale-item">
+            <div style="width: 48px; height: 48px;"><img src="app_logo.svg" style="width:100%;height:100%"></div>
+            <span>48px (نوٹیفکیشن)</span>
+          </div>
+          <div class="scale-item">
+            <div style="width: 32px; height: 32px;"><img src="app_logo.svg" style="width:100%;height:100%"></div>
+            <span>32px (اسٹیٹس بار)</span>
+          </div>
+          <div class="scale-item">
+            <div style="width: 24px; height: 24px;"><img src="app_logo.svg" style="width:100%;height:100%"></div>
+            <span>24px (فیو آئیکن)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Philosophy & Anatomy -->
+      <div class="logo-card" style="text-align: right; align-items: flex-start; justify-content: flex-start;">
+        <h3 style="color: var(--gold); font-size: 22px; margin-bottom: 16px;">لوگو کی فلسفیانہ ساخت (Design Anatomy)</h3>
+        
+        <div style="margin-bottom: 20px;">
+          <h4 style="color: var(--emerald); font-size: 16px; margin-bottom: 4px;">1. فلکیاتی ہلال (The Astronomical Crescent)</h4>
+          <p style="color: #CBD5E1; font-size: 14px;">چاند کی شرعی رؤیت، نئے اسلامی ماہ کا آغاز اور سورج و چاند کی حرکت کا مظہر جو خالص گولڈن ریشو میں ڈھلا ہوا ہے۔</p>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <h4 style="color: var(--emerald); font-size: 16px; margin-bottom: 4px;">2. مینار و قبلہ کمپاس (Minaret Spire & Qibla Needle)</h4>
+          <p style="color: #CBD5E1; font-size: 14px;">درمیان میں ابھرتا ہوا مینار بیک وقت ایک انتہائی حساس کمپاس سوئی ہے جو 360° عین کعبۃ اللہ شریف کی سمت کی نشاندہی کرتا ہے۔</p>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <h4 style="color: var(--emerald); font-size: 16px; margin-bottom: 4px;">3. محراب و افق (The Mehrab & Horizon)</h4>
+          <p style="color: #CBD5E1; font-size: 14px;">بنیاد میں کلاسیکل محراب اور نیچے کی شعاعیں استواء و زوال، طلوع و غروب اور اوقاتِ صلوٰۃ کی افقی حدود کو سموئے ہوئے ہیں۔</p>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <h4 style="color: var(--emerald); font-size: 16px; margin-bottom: 4px;">4. شاہی رنگ و نفاست (Color Palette)</h4>
+          <p style="color: #CBD5E1; font-size: 14px;">شبینہ نیلا (#0A0F1D) فلکی رات کا مظہر، شاہی سنہرا (#F59E0B) سورج کی کرنوں کا غماز، اور زمردی سبز (#10B981) اسلامی سلامتی کا پیکر ہے۔</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Realistic 3D App Icon Renderings Gallery -->
+    <div class="names-section" style="margin-bottom: 50px;">
+      <h2 style="color: var(--gold); font-size: 28px; margin-bottom: 8px;">متبادل تھری ڈی اور ایوارڈ وننگ مینیملسٹک لوگو کانسیپٹس</h2>
+      <p style="color: var(--muted); font-size: 15px; margin-bottom: 25px;">جدید اسٹوڈیو لائٹنگ، گولڈن ریفلیکشنز اور میٹیلک ایمبوسنگ کے ساتھ دو متبادل ڈیزائن کانسیپٹس:</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+        <!-- Concept A -->
+        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 24px; padding: 20px; text-align: center;">
+          <div style="border-radius: 20px; overflow: hidden; margin-bottom: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.6);">
+            <img src="concept_a.jpg" alt="Concept A" style="width: 100%; height: auto; display: block; transition: transform 0.3s ease;">
+          </div>
+          <h3 style="color: var(--gold-light); font-size: 20px; margin-bottom: 6px;">کانسیپٹ A: مَنارہ و مِیقات (The Celestial Spire)</h3>
+          <p style="color: var(--muted); font-size: 13.5px;">خالص مینار کی بلندی، اوپر اٹھتی ہوئی قبلہ سوئی اور گردشی مداروں کا پرتعیش میٹیلک گولڈ و نیوی امتزاج۔</p>
+        </div>
+
+        <!-- Concept B -->
+        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 24px; padding: 20px; text-align: center;">
+          <div style="border-radius: 20px; overflow: hidden; margin-bottom: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.6);">
+            <img src="concept_b.jpg" alt="Concept B" style="width: 100%; height: auto; display: block; transition: transform 0.3s ease;">
+          </div>
+          <h3 style="color: var(--gold-light); font-size: 20px; margin-bottom: 6px;">کانسیپٹ B: ہلال و قطب نما (Crescent & Star Astrolabe)</h3>
+          <p style="color: var(--muted); font-size: 13.5px;">گولڈن ہلال کے آغوش میں آٹھ گوشہ فلکی ستارہ اور سمت نما تیر، جو قدیمی اصطرلاب کی جدید سائنسی علامت ہے۔</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- App Name Proposals -->
+    <div class="names-section">
+      <h2 style="color: var(--gold); font-size: 28px; margin-bottom: 8px;">مستند و پرکشش ایپ ناموں کی تجاویز</h2>
+      <p style="color: var(--muted); font-size: 15px;">ایپ کے شاندار فیچرز (اوقاتِ صلوٰۃ، قبلہ کمپاس، فلکیاتی رؤیت، شمسی قبلہ) کو مدنظر رکھ کر تجویز کردہ نام:</p>
+
+      <div class="names-grid">
+        <!-- 1. Meeqat -->
+        <div class="name-card recommended">
+          <div class="name-title">
+            <span>مِیقات</span>
+            <span class="name-en">Meeqat</span>
+          </div>
+          <p class="name-desc">قرآنِ مجید کی آیت <em>"إِنَّ ٱلصَّلَوٰةَ كَانَتْ عَلَى ٱلْمُؤْمِنِينَ كِتَٰبًا مَّوْقُوتًا"</em> سے ماخوذ۔ فلکیاتی اور شرعی طور پر مقررہ وقت کو 'میقات' کہا جاتا ہے۔</p>
+          <div class="name-rationale">
+            <strong>کیوں منتخب کریں؟</strong> مختصر، بین الاقوامی سطح پر انتہائی باوقار، علمی و قرآنی سند یافتہ اور سننے میں جدید و پرکشش۔
+          </div>
+        </div>
+
+        <!-- 2. Minara -->
+        <div class="name-card">
+          <div class="name-title">
+            <span>مَنارہ</span>
+            <span class="name-en">Minara / Al-Minara</span>
+          </div>
+          <p class="name-desc">مسجد کا مینار جہاں سے اذانِ حق بلند ہوتی ہے، اور وہ فلکیاتی روشنی کا مینار (Lighthouse) جو وقت اور قبلہ کا راستہ دکھاتا ہے۔</p>
+          <div class="name-rationale">
+            <strong>کیوں منتخب کریں؟</strong> ہماری ایپ کے موجودہ نام 'Minaret' کی جدید ترین، نفیس اور خالص عربی و اردو شکل۔
+          </div>
+        </div>
+
+        <!-- 3. Siraj -->
+        <div class="name-card">
+          <div class="name-title">
+            <span>سِراج</span>
+            <span class="name-en">Siraj</span>
+          </div>
+          <p class="name-desc">قرآنِ پاک میں سورج کو 'سِراجاً وَّہّاجاً' فرمایا گیا ہے۔ چونکہ تمام نمازوں کے اوقات سورج کی حرکت سے وابستہ ہیں، اس لیے یہ فلکیاتی نام بے مثال ہے۔</p>
+          <div class="name-rationale">
+            <strong>کیوں منتخب کریں؟</strong> ایک لفظی، شاندار معنوی گہرائی، جدید مینیملزم اور سورج و قبلہ کی فلکیات کا عکاس۔
+          </div>
+        </div>
+
+        <!-- 4. Falak -->
+        <div class="name-card">
+          <div class="name-title">
+            <span>فَلَک</span>
+            <span class="name-en">Falak / Falak Pro</span>
+          </div>
+          <p class="name-desc">آسمان اور کائنات کا مدار جس میں سورج اور چاند تیر رہے ہیں (<em>"وَكُلٌّ فِي فَلَكٍ يَسْبَحُونَ"</em>)۔</p>
+          <div class="name-rationale">
+            <strong>کیوں منتخب کریں؟</strong> سائنسی و فلکیاتی تحقیق، شمسی قبلہ، اور قمری رؤیت کے لیے سب سے موزوں پیشہ ورانہ نام۔
+          </div>
+        </div>
+
+        <!-- 5. QiblaNama -->
+        <div class="name-card">
+          <div class="name-title">
+            <span>قبلہ نما جدید</span>
+            <span class="name-en">Al-Qibla / QiblaNama</span>
+          </div>
+          <p class="name-desc">برصغیر پاک و ہند کے مسلمانوں کے دل کے قریب روایتی نام، جس میں قبلہ، سمت اور نماز کا واضح مفہوم ہر خاص و عام سمجھ سکتا ہے۔</p>
+          <div class="name-rationale">
+            <strong>کیوں منتخب کریں؟</strong> عام پبلک کے لیے فوری طور پر پہچانا جانے والا، سرچ انجن (SEO) اور پلے اسٹور پر فوری ریک ہونے والا نام۔
+          </div>
+        </div>
+
+        <!-- 6. Saa'ah / Awqat -->
+        <div class="name-card">
+          <div class="name-title">
+            <span>مواقیتِ صلوٰۃ</span>
+            <span class="name-en">Mawaqeet</span>
+          </div>
+          <p class="name-desc">نمازوں کے اوقات کا جمع صیغہ، جو کہ علماء اور فقہاء کی کتب میں نمازوں کے نظام الاوقات کا سرکاری عنوان ہوتا ہے۔</p>
+          <div class="name-rationale">
+            <strong>کیوں منتخب کریں؟</strong> دینی و شرعی مدارس اور مساجد کے انتظامی بورڈز کے لیے مستند ترین علمی تاثر۔
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Specs -->
+    <div class="specs-grid">
+      <div class="spec-box">
+        <h4>📱 موبائل ایپ سائز پرفیکشن</h4>
+        <p>16x16 کے چھوٹے اسٹیٹس بار آئیکن سے لے کر 1024x1024 کے پلے اسٹور گرافک تک بغیر پھٹے کرسٹل کلیئر ویکٹر کوالٹی۔</p>
+      </div>
+      <div class="spec-box">
+        <h4>🎨 میٹیریل 3 اور آئی او ایس مطابقت</h4>
+        <p>گوگل میٹیریل یو (Adaptive Icons) اور ایپل کے Squircle ڈیزائن کے عین مطابق جیو میٹرک تناسب۔</p>
+      </div>
+      <div class="spec-box">
+        <h4>⚡ برانڈنگ شناخت</h4>
+        <p>کسی بھی دیگر عام اسلامی ایپ سے یکسر منفرد، ایک نظر میں پہچانا جانے والا گلوبل اور لگژری امپریشن۔</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
